@@ -10,6 +10,5 @@ class Employee
     @role        = arguments[:role]
     @start_date  = arguments[:start_date]
     @end_date    = arguments[:end_date]
-  end
 
 end
