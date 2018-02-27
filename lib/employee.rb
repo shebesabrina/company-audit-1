@@ -8,8 +8,8 @@ class Employee
     @employee_id = arguments[:employee_id].to_i
     @name        = arguments[:name]
     @role        = arguments[:role]
-    @start_date  = arguments[:start_date].to_i
-    @end_date    = arguments[:end_date].to_i
+    @start_date  = arguments[:start_date]
+    @end_date    = arguments[:end_date]
   end
 
 end
