@@ -12,8 +12,8 @@ class Timesheet
     @minutes     = arguments[:minutes].to_i
   end
 
-  def start_datestring_to_date
-    require date_handler
-    string_to_date
+  def start_date
+    include DateHandler
+    self.string_to_date
   end
 end
