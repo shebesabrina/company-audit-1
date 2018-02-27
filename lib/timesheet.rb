@@ -12,8 +12,12 @@ class Timesheet
     @minutes     = arguments[:minutes].to_i
   end
 
-  def start_date
-    include DateHandler
-    self.string_to_date
+  def start_date(start_date)
+    date_bits = date_string.split('-')
+    start_date = (
+      date_bits[0].to_i,
+      date_bits[1].to_i,
+      date_bits[2].to_i
+    )
   end
 end
